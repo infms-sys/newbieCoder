@@ -1,0 +1,7 @@
+---
+- name: Gather facts Windows servers
+  host: all
+  tasks:
+    - name: show ansible_os_family
+      debug:
+        msg: "{{ ansible_os_family }}"
